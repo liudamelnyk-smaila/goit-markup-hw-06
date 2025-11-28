@@ -7,7 +7,14 @@ img{    /*new*/
   max-width: 100%;
   height: auto;
 }
-
+button{
+  cursor: pointer;
+}
+.ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 h1,
 h2,
 h3,
@@ -89,13 +96,11 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
-  
 }
 .header-logo{
   padding: 16px;
   display:block;
 }
-,
 .logo-accent{
   color: #2e2f42;
 }
@@ -109,3 +114,15 @@ p {
   display: block;
   fill:#2f2f37;
 }
+/*tablet*/
+@media screen and (min-width: 768px) {
+    .burger-btn{
+      display: none;
+    }
+    .nav-list {
+    display: flex;
+    gap: 40px;
+    color: #404bbf;  
+}
+}
+
