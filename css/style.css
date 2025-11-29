@@ -215,27 +215,35 @@ p {
 }
 /*Main Section*/
 .main-section {
-    padding: 112px 0 112px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                     rgba(46, 47, 66, 0.7)), 
-                      url(../images/people.jpg);
-    height: 432px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;  
+      background-color:#2e2f42;
+  color: #fff;
+  background-image: linear-gradient( 
+    rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)),
+  url("../images/people.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 320px; 
+}
+.main-container{
+  width: 100%;
+  margin: 0 auto;
+  padding: 72px 52px;
 }
 .main-title {
     color: #ffffff;
-    font-size: 56px;
+    font-size: 36px;
     text-align: center;
     font-weight: 700;
     font-style: normal;
-    line-height: 1.12;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     font-variation-settings: "wdth" 100;
     max-width: 320px;
     margin: 0 auto 72px auto;
+    height: auto;
 }
 .main-box {
     color: #ffffff;
@@ -268,18 +276,26 @@ p {
     margin-right: auto;
     margin-left: auto;
 }
-/*tablet*/
+
+@media screen and (min-resolution: 192dpi) {
+  .main-section {
+    background-image: linear-gradient( 
+    rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)),
+    url("../images/hero-m@2x.jpg");  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    }
+  }
+  /*tablet*/
 @media screen and (min-width:768px) {
-.main-section {
-    padding: 112px 0 112px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                     rgba(46, 47, 66, 0.7)), 
-                      url(../images/people.jpg);
-    height: 432px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;  
+  .main-section
+  background-image: linear-gradient( 
+    rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)),
+  url("../images/people.jpg");!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+}
+.main-container {
+   background-size: cover;
+background-position: top;
 }
 .main-title {
     color: #ffffff;
@@ -290,11 +306,29 @@ p {
     line-height: 1.12;
     letter-spacing: 0.02em;
     font-variation-settings: "wdth" 100;
-    max-width: 320px;
     margin: 0 auto 72px auto;
 }
-
-
+.main-box {
+    color: #ffffff;
+    background-color: #4D5AE5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+gap: 10px;
+flex-direction: row;
+align-items: flex-start;
+justify-content: flex-start;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
 .main-section .main-box:hover,
 .main-section .main-box:focus {
     background-color: #404BBF;
@@ -304,8 +338,71 @@ p {
     margin-right: auto;
     margin-left: auto;
 }
+/*desktop*/
+@media screen and (min-width: 1158px) {
+.main-section {
+    padding: 188px 0;
+    background-image: 
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people.jpg);
+    max-width: 1440px;
+    height: 600px;
+    top: 72px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;  
+}
 
+.main-container{
+  width: 100%;
+  margin: 0 auto;
+  padding: 112px 136px;
+}
+.main-title {
+    color: #ffffff;
+    line-height: 60px;
+    font-size: 56px;
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    font-variation-settings: "wdth" 100;
+    max-width: 496px;
+    margin: 0 auto 36px auto;
 
+     max-width: 496px;
+  font-size: 56px;
+  line-height: 1.07;
+  margin-bottom: 36px;
+}
+.main-box {
+    color: #ffffff;
+    background-color: #4D5AE5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-section .main-box:hover,
+.main-section .main-box:focus {
+    background-color: #404BBF;
+    cursor: pointer;
+}
+.main-title .main-box{
+    margin-right: auto;
+    margin-left: auto;
+}
+}
 
 
 
