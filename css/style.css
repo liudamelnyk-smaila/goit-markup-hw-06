@@ -509,11 +509,11 @@ font-weight: 400;
 }
 ==========================================================================
 /*TEAM */
-.our-team {
+.team-hidden {
    background-color: #f4f4fd;
    padding: 96px 0;
 }
-.title-our-team {
+.name {
 font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
@@ -522,7 +522,7 @@ color: #2e2f42;
 text-transform: capitalize; 
 margin-bottom: 72px;
 }
-.team-list {
+.team-title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -530,17 +530,17 @@ margin-bottom: 72px;
     margin: 0 auto;
    
 }
-.personal-information {
- background-color: #FFFFFF;
- box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-background-color: #fff;
-width: 264px;
-     border-radius: 0 0 4px 4px;
+.team-list {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background-color: #fff;
+    width: 264px;
+    border-radius: 0 0 4px 4px;
 }
-.personal-information-container {
+.name-text {
     padding: 32px 0;
 }
-.personal-name {
+.name-next {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -549,7 +549,7 @@ text-align: center;
 color: #2e2f42;
 margin-bottom: 8px;
 }
-.description-proffesion {
+.text {
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
@@ -557,17 +557,17 @@ letter-spacing: 0.02em;
 text-align: center;
 margin-bottom: 8px;
 }
-.icon-social-networks {
+.social-link-all {
     width: 40px;
     height: 40px; 
 }
-.social-networks {
+.social-item {
   display: flex;
     justify-content: center;
     align-items: center;
    gap: 24px;   
 }
-.social-networks-link {
+.social-link {
     width: 100%;
     height: 100%;
 background-color: #4d5ae5;
@@ -576,7 +576,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.social-networks-icon {
+.socials-icon {
     fill: #f4f4fd;
 }
 /* our team-tablet */
@@ -617,11 +617,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
 
-/* our portfolio-mobile*/
-.section-our-portfolio {
+/* PORTFOLI0*/
+.portfolio-hidden {
     padding: 96px 0;
 }
-.title-portfolio {
+.name {
 font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
@@ -630,33 +630,33 @@ color: #2e2f42;
 text-transform: capitalize; 
 margin-bottom: 72px;
 }
-.portfolio-list {
+.portfolio-icon {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     gap: 48px;
 }
-.portfolio-items {
+.item-portfolio {
     width: 100%;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);;
     background-color: #fff;
 }
 
-.text-first-portfolio {
+.overlay-text {
     display: none;
 }
-.description-portfolio-container {
+.portfolio-item-conteiner {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
 }
-.description-portfolio {
+.text {
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
-.name-portfolio {
+.name-next {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -665,17 +665,17 @@ color: #2e2f42;
 margin-bottom: 8px;
 }
 
-/* our portfolio-tablet*/
+/* portfolio-tablet*/
 @media screen and (min-width: 768px) {
-    .portfolio-list {
+    .portfolio-icon {
     flex-direction: row;
-flex-wrap: wrap;
-         column-gap: 24px;
-   row-gap: 72px;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
      }
-.portfolio-items {
-     width: calc((100% - 24px) / 2);
-  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+.item-portfolio {
+    width: calc((100% - 24px) / 2);
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .portfolio {
     width: 356px;
@@ -684,28 +684,28 @@ flex-wrap: wrap;
 }
 /* our portfolio-desktop*/
 @media screen and (min-width: 1158px) {
-.section-our-portfolio {
+.portfolio-hidden {
     padding: 120px 0;
 }
-.portfolio-list {
+.portfolio-icon {
    row-gap: 48px;
      }
-.portfolio-items {
+.item-portfolio {
      width: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
- .portfolio-items:hover {
+ .item-portfolio:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
     .portfolio {
     width: 360px;
     height: 300px;
 }
-.image-portfolio {
+.imag-container {
     position: relative;
     overflow: hidden;
 }
-.text-first-portfolio {
+.overlay-text {
     display: block;
  position: absolute;
  top: 0;
@@ -720,7 +720,7 @@ flex-wrap: wrap;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-items:hover p {
+.item-portfolio:hover p {
   transform: translateY(0%);  
 }
 }
