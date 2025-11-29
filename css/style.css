@@ -225,7 +225,7 @@ p {
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  max-width: 320px; 
+  width: 100%; 
 }
 .main-container{
   width: 100%;
@@ -282,20 +282,33 @@ p {
     background-image: linear-gradient( 
     rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)),
-    url("../images/hero-m@2x.jpg");  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    }
+    url("../images/peoplemobile.jpg"); 
   }
+}
   /*tablet*/
+@media (min-resolution: 192dpi) and (min-width: 768px) {
+.main-section {
+    padding: 188px 0;
+    background-image: 
+    linear-gradient(
+      rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/peopletablet@2x.jpg); 
+}
+}
 @media screen and (min-width:768px) {
-  .main-section
-  background-image: linear-gradient( 
+  .main-section{
+ background-image: linear-gradient( 
     rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)),
-  url("../images/people.jpg");!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    url("../images/peopletablet.jpg");
+    max-width: 768px;
+    height: 436px;
+    padding: 122px 0;
 }
 .main-container {
-   background-size: cover;
-background-position: top;
+  background-size: cover;
+  background-position: top;
 }
 .main-title {
     color: #ffffff;
@@ -338,21 +351,28 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     margin-right: auto;
     margin-left: auto;
 }
+}
 /*desktop*/
-@media screen and (min-width: 1158px) {
+  @media (min-resolution: 192dpi) and (min-width: 1158px) {
 .main-section {
     padding: 188px 0;
     background-image: 
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people.jpg);
-    max-width: 1440px;
-    height: 600px;
-    top: 72px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;  
+    linear-gradient(
+      rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/peopledesktop@2x.jpg); 
 }
-
+  }
+  @media screen and (min-width:1158px) {
+  .main-section{
+ background-image: linear-gradient( 
+    rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)),
+    url("../images/peopledesktop.jpg");
+    max-width: 768px;
+    height: 436px;
+    padding: 122px 0;
+}
 .main-container{
   width: 100%;
   margin: 0 auto;
@@ -370,7 +390,6 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     font-variation-settings: "wdth" 100;
     max-width: 496px;
     margin: 0 auto 36px auto;
-
      max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
@@ -403,6 +422,9 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     margin-left: auto;
 }
 }
+
+
+/*About Us Section-2*/
 
 
 
