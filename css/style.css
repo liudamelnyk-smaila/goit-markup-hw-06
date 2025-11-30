@@ -232,7 +232,6 @@ input {
    .mobile-menu {  
     display: none;
 } 
-
 .burger-btn {
     display: none;
 }
@@ -249,7 +248,8 @@ input {
     margin-right: 120px;
     padding: 24px 0;
     }
-.nav-link {
+.nav-link,
+.link-active {
     display: block;
     padding: 24px 0;
     font-weight: 500;
@@ -269,7 +269,7 @@ input {
     color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-item::after {
+.link-active::after {
     content: '';
     width: 100%;
     position: absolute;
@@ -304,7 +304,6 @@ input {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #434455;
-    padding: 12px;
 }
 } 
 /* header-desktop */
@@ -312,7 +311,7 @@ input {
    .header-logo {
     margin-right: 76px;   
 }
-.contacts-list { 
+.contact-list { 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -470,7 +469,15 @@ input {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
+.name-next{
+font-family: "Roboto", sans-serif;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11111;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+}
 /* about-tablet */
 @media screen and (min-width: 768px) {
    .about-us-list {
@@ -483,7 +490,7 @@ input {
      width: calc((100% - 24px) / 2);
 }
 .name-next {
-    text-align: center;
+    text-align: left;
 }
 }
 
@@ -501,12 +508,7 @@ input {
         height: 112px;
 }
 .name-next {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px;
+    text-align: left;
 }
 .about {
     padding-top: 120px;
@@ -518,11 +520,6 @@ input {
 }
 .item-about {
     width: calc((100% - 72px) / 4);
-}
-.name-next {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
 }
 .text {
     font-weight: 400;
@@ -601,7 +598,9 @@ input {
 }
 .our-team{
     background-color: #f4f4fd;;
-    padding-bottom:96px ;
+    padding-bottom:96px;
+    padding-top: 96px;
+
 }
 /* our team-tablet */
 @media screen and (min-width: 768px) {
@@ -609,7 +608,6 @@ input {
     min-width: 584px;
     }
 .team-list {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -621,6 +619,9 @@ input {
     gap:64px 24px;
     justify-content: center;
    }
+   .name-text .name-next{
+text-align: center;
+}
    .personal-information {
 width: calc((100% - 24px) / 2);
 }
@@ -635,19 +636,18 @@ width: calc((100% - 24px) / 2);
 text-align: center;
 }
 .team-title{
-flex-basis: calc((100% - 3 * 24px) / 4);
+    display:flex;
+    flex-wrap: nowrap;
+    flex-basis: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    max-width: 264px;
-    height: 428px;
 }
 .team-list {
     gap: 24px;
     flex-wrap: nowrap;
-    max-width: 1128px;
     margin: 0 auto;
-    flex-basis: 100%;
     background-color: #FFFFFF;
+    width: calc((100% - 3 * 24px) / 4);;
   }
 .text{
     text-align: center;
@@ -659,11 +659,14 @@ flex-basis: calc((100% - 3 * 24px) / 4);
 .social-networks-link:focus {
     background-color: #404bbf;
 }
+.social-wrapper{
+    margin-bottom: 0;
+}
 }
 
 /* PORTFOLIO*/
-/*.portfolio {
-    padding: 96px 0;
+.portfolio {
+    padding: 96px;
 }
 .portfolio-container {
     padding: 0;
@@ -723,7 +726,7 @@ flex-basis: calc((100% - 3 * 24px) / 4);
     width: calc((100% - 24px) / 2);
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-.name-next{
+.portfolio-item-container{
    text-align: left; 
 }
 .portfolio {
@@ -787,7 +790,11 @@ flex-basis: calc((100% - 3 * 24px) / 4);
     margin-bottom: 16px;
     display: flex;
     justify-content: center;
-  }
+    color:#4d5ae5;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
 .footer-logo .logo-accent {
     color: #f4f4fd;
 }
@@ -845,6 +852,7 @@ flex-basis: calc((100% - 3 * 24px) / 4);
 .footer-label {
     width: 100%;
     margin-bottom: 16px;
+    display:block;
 }
 .footer-second {
     display: flex;
@@ -914,11 +922,17 @@ flex-basis: calc((100% - 3 * 24px) / 4);
     max-width: 584px;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
 } 
 .footer-logo {
     justify-content: flex-start;
     align-items: center;
+  }
+  .footer-logo-box{
+    margin-bottom: 0;
+  }
+  .social-wrapper{
+    margin-bottom: 0;
   }
 .footer-text {
     min-width: 264px;
