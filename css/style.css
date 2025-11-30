@@ -232,6 +232,12 @@ input {
    .mobile-menu {  
     display: none;
 } 
+.contact-list { 
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
 .burger-btn {
     display: none;
 }
@@ -507,9 +513,6 @@ color: #2e2f42;
     width: 264px;
         height: 112px;
 }
-.name-next {
-    text-align: left;
-}
 .about {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -523,6 +526,9 @@ color: #2e2f42;
 }
 .text {
     font-weight: 400;
+}
+.name-next {
+    text-align: left;
 }
 }
 /*TEAM */
@@ -558,14 +564,7 @@ color: #2e2f42;
     text-align: center;
     padding: 32px 0;
 }
-.name-next {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px;
-}
+
 .text {
     font-weight: 400;
     font-size: 16px;
@@ -662,11 +661,19 @@ text-align: center;
 .social-wrapper{
     margin-bottom: 0;
 }
+.name-next {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
 }
 
 /* PORTFOLIO*/
 .portfolio {
-    padding: 96px;
+    padding: 96px 0;
 }
 .portfolio-container {
     padding: 0;
@@ -712,6 +719,7 @@ text-align: center;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
+    text-align: left;
 }
 
 /* portfolio-tablet*/
@@ -730,7 +738,7 @@ text-align: center;
    text-align: left; 
 }
 .portfolio {
-    padding: 96px;
+    padding: 96px 0;
 }
 }
 /*portfolio-desktop*/
@@ -800,7 +808,10 @@ text-align: center;
 }
 
 .footer-logo-box {
-    margin-bottom: 72px;   
+    margin-bottom: 72px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 .footer-text {
     font-weight: 400;
@@ -930,6 +941,7 @@ text-align: center;
   }
   .footer-logo-box{
     margin-bottom: 0;
+    align-items: flex-start;
   }
   .social-wrapper{
     margin-bottom: 0;
@@ -976,7 +988,8 @@ text-align: center;
     text-align: left;
 }
 .social-wrapper{
-    margin-bottom: 72px;
+    margin-bottom: 0;
+}
 }
 .footer-logo-box {
     margin-bottom: 0;
