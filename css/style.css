@@ -50,6 +50,7 @@ input {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 /* common */
 .container {  
     max-width: 320px;
@@ -95,10 +96,12 @@ input {
     display: block;
     padding: 16px 0;
 }
-.header-logo .logo-part {
-  color: #2e2f42; 
+.header-logo {
+  color: #4D5AE5; 
   }
-  
+  .logo-accent{
+    color: #2E2F42;
+}
 .burger-btn {
    margin-left: auto;
    padding: 0;
@@ -802,8 +805,8 @@ text-align: center;
     text-transform: uppercase;
     display: inline-block;
 }
-.footer-logo .logo-accent {
-    color: #2E2F42;
+.footer-logo  {
+    color: #F4F4FD;
 }
 
 .footer-logo-box {
