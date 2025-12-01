@@ -416,6 +416,7 @@ input {
 .icon-box {
     display: none;
 }
+
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
     .main-section {
         background-image: linear-gradient(
@@ -456,9 +457,7 @@ input {
     url(../images/peopledesktop@2x.jpg);
 }
 }
-/*.about-container {
-    display: none;
-}*/
+
 .about {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -487,6 +486,15 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
 }
+.about-text{
+font-family: "Roboto", sans-serif;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11111;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+}
 /* about-tablet */
 @media screen and (min-width: 768px) {
    .about-us-list {
@@ -500,6 +508,9 @@ color: #2e2f42;
 }
 .team-name {
     text-align: left;
+}
+.about-text{
+text-align: left;
 }
 }
 
@@ -532,6 +543,9 @@ color: #2e2f42;
 }
 .team-name {
     text-align: left;
+}
+    about-text{
+        text-align: left;
 }
 }
 /*TEAM */
@@ -978,6 +992,7 @@ text-align: center;
 }
 .footer-button-form {
     margin: anset;
+}
 }
 /* dekstop */
 @media screen and (min-width: 1158px) {
