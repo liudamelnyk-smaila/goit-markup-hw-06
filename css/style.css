@@ -475,7 +475,7 @@ input {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.name-next{
+.team-name{
 font-family: "Roboto", sans-serif;
 font-weight: 700;
 font-size: 36px;
@@ -495,7 +495,7 @@ color: #2e2f42;
 .item-about {
      width: calc((100% - 24px) / 2);
 }
-.name-next {
+.team-name {
     text-align: left;
 }
 }
@@ -527,7 +527,7 @@ color: #2e2f42;
 .text {
     font-weight: 400;
 }
-.name-next {
+.team-name {
     text-align: left;
 }
 }
@@ -618,7 +618,7 @@ color: #2e2f42;
     gap:64px 24px;
     justify-content: center;
    }
-   .name-text .name-next{
+   .name-text .team-name{
 text-align: center;
 }
    .personal-information {
@@ -631,7 +631,7 @@ width: calc((100% - 24px) / 2);
    padding: 120px 0;
    background-color: #F4F4FD;
 }
-.name-next{
+.team-name{
 text-align: center;
 }
 .team-title{
@@ -661,7 +661,7 @@ text-align: center;
 .social-wrapper{
     margin-bottom: 0;
 }
-.name-next {
+.team-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -675,9 +675,6 @@ text-align: center;
 .portfolio {
     padding: 96px 0;
 }
-.portfolio-container {
-    padding: 0;
-}*/
 .name {
     font-size: 36px;
     line-height: 1.11;
@@ -712,7 +709,8 @@ text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.name-next {
+@media(min-width: 1158px){
+.portfolio-name-next {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -721,7 +719,7 @@ text-align: center;
     margin-bottom: 8px;
     text-align: left;
 }
-
+}
 /* portfolio-tablet*/
 @media screen and (min-width: 768px) {
     .portfolio-icon {
@@ -991,9 +989,11 @@ text-align: center;
     margin-bottom: 0;
 }
 }
+@media(min-width:1158px){
 .footer-logo-box {
     margin-bottom: 0;
     margin-right: 120px;
+}
 }
 .footer-button-form{
     margin: 0;
@@ -1017,7 +1017,6 @@ text-align: center;
 }
 .footer-second{
     margin-left: 80px;
-}
 }
 
 /* MODAL */
