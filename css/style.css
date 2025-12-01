@@ -412,9 +412,10 @@ input {
 .main-box {
     margin-top: 36px;
 }
-}
+
 .icon-box {
     display: none;
+}
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
@@ -457,7 +458,6 @@ input {
     url(../images/peopledesktop@2x.jpg);
 }
 }
-
 .about {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -470,7 +470,6 @@ input {
 .item-about {
     width: 100%;
 }
-
 .team-text {
     font-weight: 500;
     font-size: 16px;
@@ -513,7 +512,6 @@ color: #2e2f42;
 text-align: left;
 }
 }
-
 /* about-desktop */
 @media screen and (min-width: 1158px) {
     .icon-box {
@@ -567,8 +565,7 @@ text-align: left;
     flex-direction: column;
     align-items: center;
     gap: 72px;
-    margin: 0 auto;
-   
+    margin: 0 auto;   
 }
 .team-list {
     background-color: #FFFFFF;
@@ -581,7 +578,6 @@ text-align: left;
     text-align: center;
     padding: 32px 0;
 }
-
 .team-text {
     font-weight: 400;
     font-size: 16px;
@@ -616,7 +612,6 @@ text-align: left;
     background-color: #f4f4fd;;
     padding-bottom:96px;
     padding-top: 96px;
-
 }
 /* our team-tablet */
 @media screen and (min-width: 768px) {
@@ -688,7 +683,6 @@ text-align: center;
     margin-bottom: 8px;
 }
 }
-
 /* PORTFOLIO*/
 .portfolio {
     padding: 96px 0;
@@ -775,7 +769,7 @@ text-align: center;
      rgba(46, 47, 66, 0.08);
     }
     .text{
-        text-align: center;
+        text-align: left;
     }
     .img-container {
     position: relative;
@@ -809,7 +803,6 @@ text-align: center;
     display: flex;
    flex-direction: column;
 } 
-
 .footer-logo {
     margin-bottom: 16px;
     display: flex;
@@ -969,7 +962,6 @@ text-align: center;
     display:flex;
     gap:24px;
 }
-    
 .social-title {
     text-align: left;
 }
@@ -991,10 +983,10 @@ text-align: center;
     gap: 24px;
 }
 .footer-button-form {
-    margin: anset;
+    margin: unset;
 }
 }
-/* dekstop */
+/* desktop */
 @media screen and (min-width: 1158px) {
 .page-footer {
     padding: 100px 0;
@@ -1024,10 +1016,11 @@ text-align: center;
 .footer-second{
     margin-left: 80px;
 }
-}
-.footer-button-form{
+    .footer-button-form{
     margin: 0;
 }
+}
+
 .footer-text {
     max-width: 264px;
 }
